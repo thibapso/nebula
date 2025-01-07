@@ -1,0 +1,34 @@
+/* BackToTop.module.scss */
+
+.back-to-top {
+  position: fixed;
+  bottom: -5rem;
+  right: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(121, 49, 233);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: bottom 0.3s ease-out;
+  z-index: 1;
+}
+
+.back-to-top span {
+  color: #fff;
+  font-size: 3rem;
+  transition: transform 0.3s ease-out;
+}
+
+.visible {
+  bottom: 2rem;
+}
+
+.back-to-top:hover {
+  background-color: rgb(102, 32, 214);
+}
+
+.back-to-top:hover span {
+  transform: translateY(-4px);
+}
