@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Header.module.scss";
 
 function Header() {
@@ -7,13 +8,13 @@ function Header() {
       <nav>
         <ul className={styles.navlist}>
           <li>
-            <a href="#">Início</a>
+            <Link to="/">Início</Link>
           </li>
           <li>
-            <a href="#about">Popular</a>
+            <Link to="/popular">Popular</Link>
           </li>
           <li>
-            <a href="#contact">Tópicos</a>
+            <Link to="/topics">Tópicos</Link>
           </li>
         </ul>
       </nav>
