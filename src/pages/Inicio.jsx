@@ -7,16 +7,6 @@ function Inicio() {
   return (
     <div>
       <Comment />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card /> 
-      <Card />
-      <Card /> 
-      <Card />
-      <Card />
       <BackToTop /> 
     </div>
   );
