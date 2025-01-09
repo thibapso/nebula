@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  margin: 0 auto 1rem auto; 
+  margin: 0 auto 1rem auto;
   padding: 2rem 0;
   font-weight: 600;
   border-radius: 0.5rem;
@@ -12,9 +12,9 @@
 
 .header {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 90%; /* Ajustando a largura para ser mais flexível */
   max-width: 400px;
 }
 
@@ -28,7 +28,7 @@ h1 {
 .inputContainer {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%; /* Ajustando para ser mais flexível */
   max-width: 400px;
 }
 
@@ -55,7 +55,7 @@ h1 {
 }
 
 .button {
-  align-self: flex-end; 
+  align-self: flex-end;
   padding: 0.5rem 1.25rem;
   margin-top: 1rem;
   border: none;
@@ -77,4 +77,81 @@ h1 {
   gap: 1rem;
   align-items: center;
   width: 100%;
+}
+
+/* Media queries para telas de até 480px */
+@media (max-width: 480px) {
+  .commentContainer {
+    padding: 1rem 0; /* Ajusta o padding para telas menores */
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center; /* Centraliza o conteúdo do header */
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .inputContainer {
+    width: 90%; /* Ajusta a largura para melhor uso do espaço */
+    margin: 0 auto;
+  }
+
+  .input {
+    width: 95%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .button {
+    width: 100%; /* Garante que o botão ocupe toda a largura disponível */
+    padding: 0.5rem;
+  }
+
+  .commentsList {
+    width: 100%; /* Garante que a lista de comentários ocupe toda a largura */
+    align-items: center; /* Centraliza os cards de comentário */
+  }
+}
+
+/* Media queries para telas pequenas */
+@media (max-width: 600px) {
+  .header {
+    width: 95%; /* Ajuste para telas pequenas */
+  }
+
+  .inputContainer {
+    width: 95%; /* Ajuste para telas pequenas */
+  }
+
+  .button {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}
+
+/* Media queries para telas muito pequenas (smartphones em modo retrato, por exemplo) */
+@media (max-width: 400px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .inputContainer {
+    width: 95%;
+  }
+
+  .button {
+    width: 100%;
+    padding: 0.5rem;
+  }
 }

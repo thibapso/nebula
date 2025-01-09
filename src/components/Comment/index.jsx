@@ -17,6 +17,12 @@ function Comment() {
     }
   };
 
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleCommentSubmit(); // Aciona a função de publicação ao pressionar Enter
+    }
+  };
+
   return (
     <div className={styles.commentContainer}>
       <div className={styles.header}>
@@ -27,6 +33,7 @@ function Comment() {
           type="text"
           value={comment}
           onChange={handleCommentChange}
+          onKeyPress={handleKeyPress} // Adiciona o evento de tecla pressionada
           placeholder="O que orbita sua mente?"
           className={styles.input}
         />

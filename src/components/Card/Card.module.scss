@@ -1,13 +1,14 @@
 .cardContainer {
   display: flex;
   flex-direction: column;
-  width: 100%; 
-  max-width: 320px; 
-  margin: 2rem auto 0 auto;
+  width: 100%;
+  max-width: 320px;
+  margin: 2rem auto 0 auto; /* Garante que os cards fiquem centralizados por padrão */
   padding: 2rem;
   font-weight: 600;
   border-radius: 0.5rem;
   background: #111;
+  box-sizing: border-box; /* Adicionado para garantir que padding não afete a largura */
 }
 
 .cardText {
@@ -43,4 +44,52 @@ p {
   margin-right: 1.25rem;
   color: rgba(231, 229, 228, 0.9);
   font-size: 1rem;
+}
+
+/* Media Queries para telas pequenas */
+@media (max-width: 600px) {
+  .cardContainer {
+    max-width: 90%; /* Aumenta a largura para 90% da tela em dispositivos menores */
+    padding: 1rem; /* Reduz o padding para economizar espaço */
+    margin: 1rem auto; /* Centraliza o card */
+  }
+
+  .cardText {
+    margin-left: 0; /* Remove a margem à esquerda para se ajustar melhor à tela */
+  }
+
+  .cardIcons {
+    margin-right: 0; /* Ajusta a margem à direita */
+    justify-content: space-between; /* Alinha os ícones nas extremidades */
+  }
+
+  h2 {
+    font-size: 1rem; /* Aumenta o tamanho da fonte do título em telas pequenas */
+  }
+
+  p {
+    font-size: 0.9rem; /* Diminui um pouco o tamanho do texto */
+  }
+}
+
+/* Media Queries para telas muito pequenas */
+@media (max-width: 400px) {
+  .cardContainer {
+    max-width: 95%; /* Ajusta o máximo para 95% da tela */
+    padding: 0.5rem; /* Menos padding para telas menores */
+    margin: 1rem auto; /* Centraliza o card */
+  }
+
+  h2 {
+    font-size: 1rem; /* Aumenta o título para melhor legibilidade */
+  }
+
+  p {
+    font-size: 0.85rem; /* Ajuste no tamanho do texto */
+  }
+
+  .cardIcons {
+    font-size: 0.9rem; /* Reduz o tamanho dos ícones */
+    gap: 0.5rem; /* Reduz o espaço entre os ícones */
+  }
 }
