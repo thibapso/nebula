@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%; /* Ajustando a largura para ser mais flexível */
+  width: 90%;
   max-width: 400px;
 }
 
@@ -28,7 +28,7 @@ h1 {
 .inputContainer {
   display: flex;
   flex-direction: column;
-  width: 90%; /* Ajustando para ser mais flexível */
+  width: 90%;
   max-width: 400px;
 }
 
@@ -79,17 +79,16 @@ h1 {
   width: 100%;
 }
 
-/* Media queries para telas de até 480px */
 @media (max-width: 480px) {
   .commentContainer {
-    padding: 1rem 0; /* Ajusta o padding para telas menores */
+    padding: 1rem 0;
   }
 
   .header {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    text-align: center; /* Centraliza o conteúdo do header */
+    text-align: center;
   }
 
   h1 {
@@ -97,7 +96,7 @@ h1 {
   }
 
   .inputContainer {
-    width: 90%; /* Ajusta a largura para melhor uso do espaço */
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -108,24 +107,23 @@ h1 {
   }
 
   .button {
-    width: 100%; /* Garante que o botão ocupe toda a largura disponível */
+    width: 100%;
     padding: 0.5rem;
   }
 
   .commentsList {
-    width: 100%; /* Garante que a lista de comentários ocupe toda a largura */
-    align-items: center; /* Centraliza os cards de comentário */
+    width: 100%;
+    align-items: center;
   }
 }
 
-/* Media queries para telas pequenas */
 @media (max-width: 600px) {
   .header {
-    width: 95%; /* Ajuste para telas pequenas */
+    width: 95%;
   }
 
   .inputContainer {
-    width: 95%; /* Ajuste para telas pequenas */
+    width: 95%;
   }
 
   .button {
@@ -134,7 +132,6 @@ h1 {
   }
 }
 
-/* Media queries para telas muito pequenas (smartphones em modo retrato, por exemplo) */
 @media (max-width: 400px) {
   .header {
     flex-direction: column;
